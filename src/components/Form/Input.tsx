@@ -10,11 +10,11 @@ interface InputProps extends ChakraInputProps {
   label?: string;
 }
 
-export const Input = ({ name, label, ...rest }: InputProps) => {
+export const Input = ({ name, label, ...rest }: InputProps): JSX.Element => {
   return (
     <FormControl>
-      {!!label && <FormLabel htmlFor={name}>E-mail</FormLabel>}
-      <Input
+      {!!label && <FormLabel htmlFor={name}>{label}</FormLabel>}
+      <ChakraInput
         id={name}
         name={name}
         focusBorderColor="pink.500"
