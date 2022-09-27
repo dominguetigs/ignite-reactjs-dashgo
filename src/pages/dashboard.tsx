@@ -82,13 +82,23 @@ export default function Dashboard(): JSX.Element {
           minChildWidth="320px"
           alignItems="flex-start"
         >
-          <Box padding="8" background="gray.800" borderRadius={8} pb="4">
+          <Box
+            padding={['6', '8']}
+            background="gray.800"
+            borderRadius={8}
+            pb="4"
+          >
             <Text fontSize="lg" marginBottom="4">
               Inscritos da semana
             </Text>
             <Chart type="area" series={SERIES} options={OPTIONS} height={160} />
           </Box>
-          <Box padding="8" background="gray.800" borderRadius={8} pb="4">
+          <Box
+            padding={['6', '8']}
+            background="gray.800"
+            borderRadius={8}
+            pb="4"
+          >
             <Text fontSize="lg" marginBottom="4">
               Taxa de abertura
             </Text>
