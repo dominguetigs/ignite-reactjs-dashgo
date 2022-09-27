@@ -13,14 +13,13 @@ export const Pagination = (): JSX.Element => {
       <Box>
         <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
       </Box>
-      <Stack direction="row" spacing="2">
+      <Stack direction={['column', 'row']} spacing="2">
         <PaginationItem number={1} isCurrent />
         <PaginationItem number={2} />
         <PaginationItem number={3} />
         <PaginationItem number={4} />
         <PaginationItem number={5} />
         <PaginationItem number={6} />
-        <PaginationItem number={7} />
       </Stack>
     </Stack>
   );
