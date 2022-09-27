@@ -4,7 +4,7 @@ import { PaginationItem } from './PaginationItem';
 export const Pagination = (): JSX.Element => {
   return (
     <Stack
-      direction="row"
+      direction={['column', 'row']}
       spacing="6"
       mt="8"
       justify="space-between"
@@ -13,7 +13,7 @@ export const Pagination = (): JSX.Element => {
       <Box>
         <strong>0</strong> - <strong>10</strong> de <strong>100</strong>
       </Box>
-      <Stack direction={['column', 'row']} spacing="2">
+      <Stack direction="row" spacing="2">
         <PaginationItem number={1} isCurrent />
         <PaginationItem number={2} />
         <PaginationItem number={3} />
