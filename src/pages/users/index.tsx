@@ -43,7 +43,7 @@ export default function UserList() {
             </Button>
           </Flex>
 
-          <Table>
+          <Table colorScheme="whiteAlpha">
             <Thead>
               <Tr>
                 <Th px="6" color="gray.300" width="8">
