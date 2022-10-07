@@ -25,7 +25,12 @@ export default function SignIn(): JSX.Element {
 
   const { errors, isSubmitting } = formState;
 
-  const handleSignIn: SubmitHandler<SignInFormData> = (values) => {
+  const handleSignIn: SubmitHandler<SignInFormData> = async (values) => {
+    await new Promise((resolve) =>
+      setTimeout(() => {
+        resolve(null);
+      }, 3000)
+    );
     console.log(values);
   };
 
